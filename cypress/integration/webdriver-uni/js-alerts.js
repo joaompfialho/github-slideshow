@@ -28,6 +28,13 @@ describe("Handle js alerts", () => {
         // Press the button
         cy.get('#button4').click()
 
+        // Collect the message available under alert
+        cy.on('window:alert', (str) => {
+            return true
+        })
+
+        cy.get('#confirm-alert-text').contains('You pressed OK!')
+
 
     })
 
