@@ -42,7 +42,7 @@ describe("Verifying variables, Cypress commands and JQuery commands", () => {
         })
     })
 
-    it.only("TC003 - Validate properties of the Contact Us Page", () => {
+    it("TC003 - Validate properties of the Contact Us Page", () => {
         //cypress code
         cy.visit("https://automationteststore.com/index.php?rt=content/contact")
 

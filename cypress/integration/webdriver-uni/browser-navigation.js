@@ -2,7 +2,7 @@
 
 describe("Validate webdriveruni homepage links", () => {
 
-    it.only("TC001 - Confirm links redirect to the correct pages", () => {
+    it("TC001 - Confirm links redirect to the correct pages", () => {
         //cypress code
         cy.visit("https://webdriveruniversity.com")
         cy.get('#contact-us').invoke('removeAttr', 'target').click({force:true})

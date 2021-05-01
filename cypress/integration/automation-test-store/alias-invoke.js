@@ -24,7 +24,7 @@ describe("Alias and Invoke", () => {
         cy.get('@productThumbnail').find('.productcart').invoke('attr', 'title').should('include', 'Add to Cart')
     })
 
-    it.only("TC003 - Calculate total of normal and sale products", () => {
+    it("TC003 - Calculate total of normal and sale products", () => {
         //cypress code
         cy.visit("https://automationteststore.com/");
         
@@ -66,7 +66,7 @@ describe("Alias and Invoke", () => {
         })
         .then(() => {
             cy.log("All items total: " + itemsTotal)
-            expect(itemsTotal).to.equal(679.1)
+            expect(itemsTotal).to.equal(663.1)
         })
 
         .then(() => {

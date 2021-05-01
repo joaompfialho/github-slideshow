@@ -1,3 +1,19 @@
 {
-    "chromeWebSecurity": false
+  "baseUrl": "https://webdriveruniversity.com/",
+  "chromeWebSecurity": false,
+  "pageLoadTimeout": 30000,
+  "ignoreTestFiles": "**/other/*",
+  "videosFolder": "cypress/videos/testExecutionVideos",
+  "viewPortHeight": 1080,
+  "viewPortWidth": 1920,
+  "env": {
+    "RETRIES": 2,
+    "webdriveruni_homepage": "https://webdriveruniversity.com/",
+    "first_name": "sarah"
+  },
+  "projectId": "zzx5ee",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
 }

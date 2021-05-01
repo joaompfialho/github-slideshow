@@ -8,7 +8,7 @@ describe("Same Origin Policy", () => {
         cy.visit("https://automationteststore.com/")
     })
 
-    it.only("TC002 - Validate visiting two different domains via user action", () => {
+    it("TC002 - Validate visiting two different domains via user action", () => {
         //cypress code
         cy.visit("https://webdriveruniversity.com/")
         cy.get('#automation-test-store').invoke('removeAttr', 'target').click()

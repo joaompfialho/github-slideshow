@@ -10,7 +10,7 @@ describe("Inspect Automation Test Store items using chain of commands", () => {
 
     })
 
-    it.only("TC002 - Click on the first item text", () => {
+    it("TC002 - Click on the first item text", () => {
         //cypress code
         cy.visit("https://automationteststore.com/");
         //cy.get('.prdocutname').contains('Skinsheen Bronzer Stick').click();
